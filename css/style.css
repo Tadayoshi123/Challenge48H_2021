@@ -318,10 +318,6 @@ header a:hover{
     color: black;   
 }
 
-
-
-
-
 footer{
     
     letter-spacing: 2px;
@@ -337,8 +333,28 @@ footer{
    
 }
 
-
-
 .contenu{
     height: auto;
+}
+
+.container-fluid button {
+    background-color:rgb(196, 193, 193);
+	letter-spacing: 0.5px;
+    border: 1px solid black;
+    color: white;
+    padding: 15px;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin: 20px;
+    margin-left: 0;
+    transition: 1s;  
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container-fluid button:hover {
+    transition: 1s;
+    border:1px solid black;
+    background: white;
+    color: black;   
 }
