@@ -210,32 +210,6 @@ header a:hover{
     justify-content: center;
 }
 
-.About{
-    display: flex;  
-    align-content: center;
-    align-items: center;   
-    margin: 50px;  
-    justify-content: space-between;
-    margin-top: 0px;
-}
-
-.About h1{
-    letter-spacing: 3px;
-    font-size: 30px;   
-}
-
-.About p{
-    letter-spacing: 1px;
-    font-size: 20px;
-    margin: 5px;
-    margin-left: 0px;
-}
-
-.img_about{
-   width: 40%;
-   margin: 40px;
-}
-
 .paragraphe{
   margin: 20px;  
   width: 50%;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <title>Page1</title>
+    <title>Team 23</title>
 <head>  
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
@@ -15,12 +15,12 @@
 <div class="contenu">
     <header >
 
-		<h2>New Port</h2>
+		<h2>Team 23</h2>
         
 		<nav>
 			<ul>
 				<li>
-					<a href="index.php">Gallery</a>
+					<a href="index.php">Gallerie</a>
                 </li>
                 
 				<li>

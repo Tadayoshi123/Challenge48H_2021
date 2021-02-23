@@ -14,7 +14,7 @@ $annonce = $requeteSQL->fetch();
 
 
 <div class='container-fluid' >
-    <div class="card mx-auto col-md-3 col-10 mt-5"> <img class='mx-auto img-thumbnail' src="<?php echo $annonce['img']; ?>" width="500" height="500" />
+    <div class="card mx-auto col-md-3 col-10 mt-5"> <img class='imgzoom' src="<?php echo $annonce['img']; ?>" width="500" height="500" />
         <div class="card-body text-center mx-auto">
             <div class='cvp'>
                 <h3 class="card-title font-weight-bold">Titre : <?php echo $annonce['titre']; ?></h3>

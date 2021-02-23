@@ -1,7 +1,7 @@
 <?php include("inc/header.inc.php"); ?>
 
 
-<div class="TITRE" id="NEWS" >Gallery</div>
+<div class="TITRE" id="NEWS" >Gallerie</div>
 
 <section class="news_list" > 
 
