@@ -56,7 +56,7 @@ if (isset($_POST['ajout'])) {
         <div class="form-group">
                 <h5 for="text">Type d'image</h5>
                 <select id="field-4" name="type"  >
-                    <option value="photo Passion Froid">photo PassionFroid</option>
+                    <option value="photo Passion Froid">Photo PassionFroid</option>
                     <option value="Photo fournisseur">Photo fournisseur</option>
                     <option value="Logo">Logo</option>
                 </select>
