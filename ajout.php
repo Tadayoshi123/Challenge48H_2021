@@ -1,6 +1,7 @@
 <?php include("inc/header.inc.php"); 
 
 if (isset($_POST['ajout'])) {
+
        $titre = htmlspecialchars($_POST['nom']);
        $type = htmlspecialchars($_POST['type']);
        $p_produit = htmlspecialchars($_POST['p_produit']);
@@ -8,8 +9,14 @@ if (isset($_POST['ajout'])) {
        $p_instit = htmlspecialchars($_POST['p_instit']);
        $format = htmlspecialchars($_POST['format']);
        $credits = htmlspecialchars($_POST['credits']);
-       $droits = htmlspecialchars($_POST['droits']);
+       $copyright = htmlspecialchars($_POST['copyright']);
        $tags = htmlspecialchars($_POST['tags']);
+       if (isset($_POST['droits'])) {
+        $droits = htmlspecialchars($_POST['droits']);
+      } else {
+        $droits = "non";
+        $copyright = NULL;
+      }
        
 
         $name = "";
@@ -24,8 +31,8 @@ if (isset($_POST['ajout'])) {
        }
       
 
-       $requeteSQL = $pdo->prepare("INSERT INTO aliment (titre, img, type, p_produit, p_humain, p_instit, format, credits, droits, tags) VALUES (?, 'img/$name', ?, ?, ?, ?, ?, ?, ?, ?)");
-       $requeteSQL->execute(array($titre, $type, $p_produit, $p_humain, $p_instit, $format, $credits, $droits, $tags));
+       $requeteSQL = $pdo->prepare("INSERT INTO aliment (titre, img, type, p_produit, p_humain, p_instit, format, credits, droits, copyright, tags) VALUES (?, 'img/$name', ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+       $requeteSQL->execute(array($titre, $type, $p_produit, $p_humain, $p_instit, $format, $credits, $droits,$copyright, $tags));
        echo "une annonce a été mise en ligne ";
        
     }
@@ -90,14 +97,12 @@ if (isset($_POST['ajout'])) {
         <div class="form-group">
             <h5 for="text">Crédits photos</h5>
             <input type="text" class="form-control" name="credits" id="">
-        </div>
-
-        <div class="form-group">
-                <h5 for="text">Droits d'utilisation limités</h5>
-                <select id="field-4" name="droits"  >
-                    <option value="oui">oui</option>
-                    <option value="non">non</option>
-                </select>
+        </div> </br>
+        <div>
+        <label for="requirement">Droits d'utilisations ?</label>
+			<input type="checkbox" name="droits" value="oui" id="requirement" class="control">
+				<div class="conditional">
+				<input type="text" id="option" placeholder="Copyright" name="copyright">
         </div>
 
         <div class="form-group">
