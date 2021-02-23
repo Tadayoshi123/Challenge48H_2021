@@ -20,7 +20,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="index.php">Gallerie</a>
+					<a href="index.php">Galerie</a>
                 </li>
                 
 				<li>

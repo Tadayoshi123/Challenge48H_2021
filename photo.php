@@ -27,6 +27,7 @@ $annonce = $requeteSQL->fetch();
                 <p class="Tags">Droits : <?php echo $annonce['droits']; ?> </p>
                 <p class="Tags">Tags : <?php echo $annonce['tags']; ?> </p>
                 <button ><a href="modification.php?id=<?php echo $annonce['id_aliment']; ?>" style="text-decoration: none; color: black;">Modifier ou supprimer</a></button>
+                <button ><a href="<?php echo $annonce['img']; ?>" style="text-decoration: none; color: black;" download>Télécharger</a></button>
             </div>
         </div>
     </div>
